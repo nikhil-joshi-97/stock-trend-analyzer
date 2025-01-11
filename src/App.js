@@ -11,6 +11,7 @@ import {
   sendNotification,
 } from "./utils/stockUtils";
 import { fetchStockData } from "./api/stockApi";
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   const [stockSymbol, setStockSymbol] = useState("");
@@ -118,6 +119,7 @@ function App() {
 
   return (
     <Container maxWidth="lg" sx={{ py: 4 }}>
+      <Analytics />
       <Grid container spacing={3}>
         <Grid item xs={12} md={8}>
           <Paper elevation={3} sx={{ p: 3 }}>
