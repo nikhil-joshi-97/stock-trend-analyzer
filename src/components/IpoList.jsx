@@ -43,7 +43,7 @@ const UpcomingIPOs = () => {
             <Grid item xs={12} sm={6} md={12} key={ipo.ticker}>
               <Card variant="outlined">
                 <CardContent>
-                  <Typography variant="h6">{ipo.issuer_name}</Typography>
+                  <Typography variant="h6" fontWeight='bold'>{ipo.issuer_name}</Typography>
                   <Typography>
                     Status:{" "}
                     {String(ipo.ipo_status ?? "UNKNOWN").toLocaleUpperCase()}

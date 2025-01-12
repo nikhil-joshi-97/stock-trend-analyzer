@@ -65,12 +65,12 @@ const MarketStatus = () => {
 
   return (
     <Grid container spacing={2} justifyContent="center" alignItems="center">
-      <Grid item xs={12} sm={8} md={6}>
+      <Grid item xs={12} sm={8} md={12}>
+        <Typography variant="h4" component="h2" gutterBottom>
+          Market Status
+        </Typography>
         <Card variant="outlined">
           <CardContent>
-            <Typography variant="h4" component="h2" gutterBottom>
-              Market Status
-            </Typography>
             <Typography variant="body1">
               <strong>
                 Crypto:

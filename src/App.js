@@ -5,8 +5,8 @@ import StockChart from "./components/StockChart";
 import TrendAlert from "./components/TrendAlert";
 import Watchlist from "./components/Watchlist";
 import NewsComponent from "./components/StockNews";
-import TopGainers from "./components/IpoList";
-import TopLosers from "./components/MarketStatus";
+import UpcomingIPOs from "./components/IpoList";
+import MarketStatus from "./components/MarketStatus";
 import {
   calculateTrend,
   formatStockData,
@@ -161,14 +161,14 @@ function App() {
           />
         </Grid>
 
-        <Grid item xs={12} md={8}>
+        <Grid item xs={12} md={12}>
           <NewsComponent/>
         </Grid>
-        <Grid item xs={12} md={4}>
-          <TopGainers/>
+        <Grid item xs={12} md={6}>
+          <UpcomingIPOs/>
         </Grid>
-        <Grid item xs={12} md={4}>
-          <TopLosers/>
+        <Grid item xs={12} md={6}>
+          <MarketStatus/>
         </Grid>
       </Grid>
 

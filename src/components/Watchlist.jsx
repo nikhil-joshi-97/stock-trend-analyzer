@@ -15,7 +15,7 @@ import TrendingDownIcon from "@mui/icons-material/TrendingDown";
 
 const Watchlist = ({ stocks, onRemoveStock, onSelectStock }) => {
   return (
-    <Paper elevation={3} sx={{ p: 2 }}>
+    <Paper elevation={3} sx={{ p: 2, height: "80%" }}>
       <Typography variant="h6" gutterBottom>
         Watchlist
       </Typography>

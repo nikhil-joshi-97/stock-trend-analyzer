@@ -16,7 +16,7 @@ const NewsComponent = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
 
-  const API_KEY = process.env.REACT_APP_POLYGON_API_KEY; // Use an environment variable
+  const API_KEY = process.env.REACT_APP_POLYGON_API_KEY;
   const NEWS_ENDPOINT = "https://api.polygon.io/v2/reference/news";
 
   useEffect(() => {
@@ -25,7 +25,7 @@ const NewsComponent = () => {
         const response = await axios.get(NEWS_ENDPOINT, {
           params: {
             apiKey: API_KEY,
-            limit: 25, // Fetch 10 news articles
+            limit: 25,
           },
         });
 
@@ -63,7 +63,7 @@ const NewsComponent = () => {
     );
 
   return (
-    <Box p={3}>
+    <Box>
       <Typography variant="h4" gutterBottom>
         Latest News
       </Typography>
