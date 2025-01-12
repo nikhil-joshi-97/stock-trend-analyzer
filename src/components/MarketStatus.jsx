@@ -90,12 +90,12 @@ const MarketStatus = () => {
             </Typography>
             <Typography variant="body1">
               <strong>
-                NASDAQ:{String(marketStatus.exchanges.nyse).toLocaleUpperCase()}
+                NYSE:{String(marketStatus.exchanges.nyse).toLocaleUpperCase()}
               </strong>
             </Typography>
             <Typography variant="body1">
               <strong>
-                NASDAQ:{String(marketStatus.exchanges.otc).toLocaleUpperCase()}
+                OTC:{String(marketStatus.exchanges.otc).toLocaleUpperCase()}
               </strong>
             </Typography>
           </CardContent>

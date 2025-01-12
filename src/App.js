@@ -5,8 +5,8 @@ import StockChart from "./components/StockChart";
 import TrendAlert from "./components/TrendAlert";
 import Watchlist from "./components/Watchlist";
 import NewsComponent from "./components/StockNews";
-import TopGainers from "./components/TopGainers";
-import TopLosers from "./components/TopLosers";
+import TopGainers from "./components/IpoList";
+import TopLosers from "./components/MarketStatus";
 import {
   calculateTrend,
   formatStockData,
