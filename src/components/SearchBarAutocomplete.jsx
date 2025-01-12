@@ -54,7 +54,7 @@ const SearchBarAutocomplete = ({ onStockSelect, loading }) => {
       renderInput={(params) => (
         <TextField
           {...params}
-          label="Search stocks"
+          label="Search US stocks"
           placeholder="Enter stock symbol or name"
           InputProps={{
             ...params.InputProps,
