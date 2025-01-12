@@ -4,6 +4,9 @@ import SearchBarAutocomplete from "./components/SearchBarAutocomplete";
 import StockChart from "./components/StockChart";
 import TrendAlert from "./components/TrendAlert";
 import Watchlist from "./components/Watchlist";
+import NewsComponent from "./components/StockNews";
+import TopGainers from "./components/TopGainers";
+import TopLosers from "./components/TopLosers";
 import {
   calculateTrend,
   formatStockData,
@@ -156,6 +159,16 @@ function App() {
             onRemoveStock={removeFromWatchlist}
             onSelectStock={handleSearch}
           />
+        </Grid>
+
+        <Grid item xs={12} md={8}>
+          <NewsComponent/>
+        </Grid>
+        <Grid item xs={12} md={4}>
+          <TopGainers/>
+        </Grid>
+        <Grid item xs={12} md={4}>
+          <TopLosers/>
         </Grid>
       </Grid>
 

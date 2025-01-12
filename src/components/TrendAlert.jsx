@@ -1,5 +1,5 @@
 import React from "react";
-import { Alert, AlertTitle, Button, Box } from "@mui/material";
+import { Alert, AlertTitle, Button, Box, Typography } from "@mui/material";
 import TrendingUpIcon from "@mui/icons-material/TrendingUp";
 import TrendingDownIcon from "@mui/icons-material/TrendingDown";
 import AddIcon from "@mui/icons-material/Add";
@@ -27,11 +27,15 @@ const TrendAlert = ({ trend, symbol, onAddToWatchlist, isInWatchlist }) => {
           onClick={onAddToWatchlist}
           disabled={isInWatchlist}
           startIcon={isInWatchlist ? <CheckIcon /> : <AddIcon />}
+          sx={{ mt: 3 }}
         >
           {isInWatchlist ? "Added" : "Add to Watchlist"}
         </Button>
       }
     >
+      <Typography size="h3" fontWeight="bold">
+        {symbol}
+      </Typography>
       <AlertTitle>{trend.direction.toUpperCase()}</AlertTitle>
       <Box
         sx={{
